@@ -5,7 +5,7 @@ public class Passerotto extends Animale{
     private String colorePiume;
 
 
-    public Passerotto(String nome, String eta, float peso, String colorePiume) {
+    public Passerotto(String nome, int eta, float peso, String colorePiume) {
         super(nome, eta, peso);
         this.colorePiume = colorePiume;
         
@@ -16,12 +16,12 @@ public class Passerotto extends Animale{
 
 
     @Override
-    void verso() {
+    public void verso() {
         System.out.println("Cip cip");;
     }
 
     @Override
-    void mangia() {
+    public void mangia() {
        System.out.println("Mangio vermetti");
     }
 

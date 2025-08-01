@@ -5,7 +5,7 @@ public class Aquila extends Animale{
     private String lunghezzaBecco;
 
 
-    public Aquila(String nome, String eta, float peso, String lunghezzaBecco) {
+    public Aquila(String nome, int eta, float peso, String lunghezzaBecco) {
         super(nome, eta, peso);
         this.lunghezzaBecco = lunghezzaBecco;
        
@@ -16,12 +16,12 @@ public class Aquila extends Animale{
 
 
     @Override
-    void verso() {
+    public void verso() {
         System.out.println("Criii");;
     }
 
     @Override
-    void mangia() {
+    public void mangia() {
        System.out.println("Mangio mammiferi, rettili e pesci");;
     }
 

@@ -4,7 +4,7 @@ public class Delfino extends Animale{
     
     private boolean isAddestrato;
 
-    public Delfino(String nome, String eta, float peso, boolean isAddestrato) {
+    public Delfino(String nome, int eta, float peso, boolean isAddestrato) {
         super(nome, eta, peso);
         this.isAddestrato = isAddestrato;
     }
@@ -14,12 +14,12 @@ public class Delfino extends Animale{
 
 
     @Override
-    void verso() {
+    public void verso() {
        System.out.println("Click");;
     }
 
     @Override
-    void mangia() {
+    public void mangia() {
        System.out.println("Mangio pesci e creostacei");;
     }
 

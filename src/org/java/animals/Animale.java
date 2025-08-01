@@ -3,14 +3,14 @@ package org.java.animals;
 public abstract class Animale {
 
     protected String nome;
-    protected String eta;
+    protected int eta;
     protected float peso;
 
 
     
 
 
-    public Animale(String nome, String eta, float peso) {
+    public Animale(String nome, int eta, float peso) {
         this.nome = nome;
         this.eta = eta;
         this.peso = peso;
@@ -36,7 +36,7 @@ public abstract class Animale {
 
 
 
-    public String getEta() {
+    public int getEta() {
         return eta;
     }
 
@@ -44,7 +44,7 @@ public abstract class Animale {
 
 
 
-    public void setEta(String eta) {
+    public void setEta(int eta) {
         this.eta = eta;
     }
 

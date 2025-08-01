@@ -3,17 +3,17 @@ package org.java.animals;
 public class Cane extends Animale{
 
     private String lunghezzaPelo;
-    private int numeroZampe;
+    
 
 
 
 
 
 
-    public Cane(String nome, String eta, float peso, String lunghezzaPelo, int numeroZampe) {
+    public Cane(String nome, int eta, float peso, String lunghezzaPelo) {
         super(nome, eta, peso);
         this.lunghezzaPelo = lunghezzaPelo;
-        this.numeroZampe = numeroZampe;
+      
     }
 
 
@@ -39,31 +39,16 @@ public class Cane extends Animale{
 
 
 
-    public int getNumeroZampe() {
-        return numeroZampe;
-    }
-
-
-
-
-
-
-    public void setNumeroZampe(int numeroZampe) {
-        this.numeroZampe = numeroZampe;
-    }
-
-
-
 
 
 
     @Override
-    void verso() {
+    public void verso() {
        System.out.println("Bau bau");;
     }
 
     @Override
-    void mangia() {
+    public void mangia() {
        System.out.println("Mangio croccantini");;
     }
 
