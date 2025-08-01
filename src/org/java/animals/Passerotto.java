@@ -1,6 +1,8 @@
 package org.java.animals;
 
-public class Passerotto extends Animale{
+import org.java.animals.interfaces.IVola;
+
+public class Passerotto extends Animale implements IVola{
 
     private String colorePiume;
 
@@ -39,6 +41,15 @@ public class Passerotto extends Animale{
 
     public void setColorePiume(String colorePiume) {
         this.colorePiume = colorePiume;
+    }
+
+
+
+
+
+    @Override
+    public void vola() {
+       System.out.println("Sto volando!!!");;
     }
     
 

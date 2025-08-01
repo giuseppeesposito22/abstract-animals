@@ -1,6 +1,8 @@
 package org.java.animals;
 
-public class Delfino extends Animale{
+import org.java.animals.interfaces.INuota;
+
+public class Delfino extends Animale implements INuota{
     
     private boolean isAddestrato;
 
@@ -37,6 +39,15 @@ public class Delfino extends Animale{
 
     public void setAddestrato(boolean isAddestrato) {
         this.isAddestrato = isAddestrato;
+    }
+
+
+
+
+
+    @Override
+    public void nuota() {
+       System.out.println("Sto nuotando!!!");;
     }
 
 

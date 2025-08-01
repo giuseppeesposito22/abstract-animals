@@ -1,6 +1,8 @@
 package org.java.animals;
 
-public class Aquila extends Animale{
+import org.java.animals.interfaces.IVola;
+
+public class Aquila extends Animale implements IVola{
 
     private String lunghezzaBecco;
 
@@ -39,6 +41,15 @@ public class Aquila extends Animale{
 
     public void setLunghezzaBecco(String lunghezzaBecco) {
         this.lunghezzaBecco = lunghezzaBecco;
+    }
+
+
+
+
+
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!!!");;
     }
 
 
