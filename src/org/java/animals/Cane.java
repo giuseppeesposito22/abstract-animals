@@ -2,7 +2,7 @@ package org.java.animals;
 
 public class Cane extends Animale{
 
-    private String pelo;
+    private String lunghezzaPelo;
     private int numeroZampe;
 
 
@@ -10,9 +10,9 @@ public class Cane extends Animale{
 
 
 
-    public Cane(String nome, String eta, float peso, String pelo, int numeroZampe) {
+    public Cane(String nome, String eta, float peso, String lunghezzaPelo, int numeroZampe) {
         super(nome, eta, peso);
-        this.pelo = pelo;
+        this.lunghezzaPelo = lunghezzaPelo;
         this.numeroZampe = numeroZampe;
     }
 
@@ -21,8 +21,8 @@ public class Cane extends Animale{
 
 
 
-    public String getPelo() {
-        return pelo;
+    public String getlunghezzaPelo() {
+        return lunghezzaPelo;
     }
 
 
@@ -30,8 +30,8 @@ public class Cane extends Animale{
 
 
 
-    public void setPelo(String pelo) {
-        this.pelo = pelo;
+    public void setlunghezzaPelo(String lunghezzaPelo) {
+        this.lunghezzaPelo = lunghezzaPelo;
     }
 
 
